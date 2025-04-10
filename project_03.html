@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project 3</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                background-color: rgb(9, 160, 236);
+            }
+            .container{
+                margin: 10px 50px 50px 330px;
+                box-sizing: border-box;
+                height:400px;
+                width:600px;
+                border-radius: 20px;
+                justify-content: center;
+                text-align: center;
+                display: flex;
+                flex-direction:column;
+            }
+            .container .content{
+                padding: 20px;
+                border-radius: 20px;
+                box-sizing: border-box;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height:normal;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+            <h1 style="background-color:white; padding:10px">Your Local Time</h1>
+            <h4 id="clock" style="background-color:white; padding:10px; font-size:1.3em">Time</h4>
+            </div>
+        </div>
+    </body>
+    <script>
+        const clock = document.getElementById('clock');
+       
+        setInterval(function(){
+            // second method to solve it 
+            let date = new Date();
+            console.log(date.toLocaleString());
+            clock.innerHTML=date.toLocaleString();
+
+        },1000)
+    </script>
+</html>

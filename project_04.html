@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project 4</title>
+        <style>
+            *{
+               margin:0;
+               padding:0;
+               box-sizing:border-box;
+               background-color: rgb(12, 175, 245);
+            }
+            .container{
+                margin:100px 80px 80px 380px;
+                padding:20px;
+                background-color: white;
+                box-sizing: border-box;
+                box-shadow: 10px 10px  grey;
+                border-radius:20px;
+                height:300px;
+                width:420px;
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                text-align:center;
+            }
+            .container .content p{
+                padding:10px;
+                background-color:white;
+                color:black;
+                font-family:'Times New Roman', Times, serif;
+                font-size: 1em;
+                font-weight: 800;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="content">
+                <p>Try to guess a random numbrer between 1 to 100. You have 10 attempts to guess the right number. </p>
+                <p id="guess">Guess a number</p>
+                <p>Submit   <input type="submit" value="Submit" style="background-color: white;"></p>
+                <p id="previous">Previous guess : </p>
+                <p id="remaining">Guess Remaining : </p>
+            </div>
+
+        </div>
+    </body>
+</html>
